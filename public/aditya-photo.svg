@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0D10"/>
+      <stop offset="50%" stop-color="#11161F"/>
+      <stop offset="100%" stop-color="#07090C"/>
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5EE7F5" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5EE7F5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9A07A"/>
+      <stop offset="50%" stop-color="#C28760"/>
+      <stop offset="100%" stop-color="#A56D46"/>
+    </linearGradient>
+    <linearGradient id="batik-base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B2433"/>
+      <stop offset="50%" stop-color="#151C28"/>
+      <stop offset="100%" stop-color="#0F141E"/>
+    </linearGradient>
+    <pattern id="batik-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <!-- Traditional Megamendung / Cloud Waves motif -->
+      <path d="M 10 40 Q 25 15 45 35 Q 65 55 75 40 Q 80 50 65 65 Q 40 80 20 60 Z" fill="none" stroke="#C4A882" stroke-width="1.8" opacity="0.65"/>
+      <path d="M 15 42 Q 27 22 43 38 Q 58 52 68 42" fill="none" stroke="#6C829D" stroke-width="1.2" opacity="0.5"/>
+      <path d="M 30 10 Q 50 0 65 15 Q 80 30 70 45" fill="none" stroke="#D8C3A5" stroke-width="1.2" opacity="0.55"/>
+      <circle cx="45" cy="35" r="2.5" fill="#E8D7C1" opacity="0.7"/>
+      <circle cx="20" cy="60" r="2" fill="#5EE7F5" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bg-grad)"/>
+  
+  <!-- Subtle Grid lines -->
+  <line x1="100" y1="0" x2="100" y2="1000" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="700" y1="0" x2="700" y2="1000" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="0" y1="800" x2="800" y2="800" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Subtle Studio Rim Glow -->
+  <circle cx="400" cy="350" r="320" fill="url(#cyan-glow)" filter="blur(40px)"/>
+
+  <!-- Silhouette & Body: Aditya wearing dark batik shirt, arms crossed -->
+  <!-- Torso & Shoulders -->
+  <path d="M 170 1000 L 210 520 C 230 460 300 440 400 440 C 500 440 570 460 590 520 L 630 1000 Z" fill="url(#batik-base)"/>
+  <path d="M 170 1000 L 210 520 C 230 460 300 440 400 440 C 500 440 570 460 590 520 L 630 1000 Z" fill="url(#batik-pattern)"/>
+
+  <!-- Folded Arms & Batik Sleeves -->
+  <!-- Left Arm crossing over -->
+  <path d="M 210 520 C 200 600 240 750 340 760 C 440 770 540 720 570 650" fill="none" stroke="#121824" stroke-width="60" stroke-linecap="round"/>
+  <path d="M 210 520 C 200 600 240 750 340 760 C 440 770 540 720 570 650" fill="none" stroke="url(#batik-pattern)" stroke-width="56" stroke-linecap="round"/>
+  
+  <!-- Right Arm crossing underneath -->
+  <path d="M 590 520 C 600 600 560 720 460 750 C 370 760 280 730 250 670" fill="none" stroke="#0E131C" stroke-width="56" stroke-linecap="round"/>
+  <path d="M 590 520 C 600 600 560 720 460 750 C 370 760 280 730 250 670" fill="none" stroke="url(#batik-pattern)" stroke-width="52" stroke-linecap="round"/>
+
+  <!-- Hands folded / wrist contour -->
+  <ellipse cx="490" cy="690" rx="35" ry="22" fill="#B98058" transform="rotate(-15 490 690)"/>
+  <ellipse cx="320" cy="710" rx="35" ry="22" fill="#B07850" transform="rotate(15 320 710)"/>
+
+  <!-- Shirt Collar -->
+  <path d="M 330 450 L 400 530 L 470 450 L 430 420 L 370 420 Z" fill="#151C28" stroke="#C4A882" stroke-width="1.5"/>
+  <path d="M 400 530 L 400 700" stroke="#0B0D10" stroke-width="4"/>
+  <circle cx="400" cy="570" r="4" fill="#C4A882"/>
+  <circle cx="400" cy="620" r="4" fill="#C4A882"/>
+
+  <!-- Neck -->
+  <rect x="365" y="370" width="70" height="90" rx="20" fill="#B98058"/>
+  <path d="M 365 420 Q 400 450 435 420" fill="none" stroke="#9A6540" stroke-width="3" opacity="0.6"/>
+
+  <!-- Head / Face -->
+  <ellipse cx="400" cy="300" rx="100" ry="125" fill="url(#skin)"/>
+  <!-- Jawline contour -->
+  <path d="M 310 270 Q 305 370 400 415 Q 495 370 490 270" fill="url(#skin)"/>
+
+  <!-- Hair - Neat short black hair -->
+  <path d="M 295 270 C 290 190 350 160 400 160 C 455 160 510 190 505 270 C 495 240 480 230 460 230 C 430 220 370 220 340 230 C 320 235 305 245 295 270 Z" fill="#111317"/>
+  <path d="M 295 270 C 295 290 305 315 310 325 L 315 280 Z" fill="#111317"/>
+  <path d="M 505 270 C 505 290 495 315 490 325 L 485 280 Z" fill="#111317"/>
+
+  <!-- Ears -->
+  <ellipse cx="300" cy="310" rx="12" ry="24" fill="#B98058"/>
+  <ellipse cx="500" cy="310" rx="12" ry="24" fill="#B98058"/>
+
+  <!-- Eyebrows -->
+  <path d="M 335 270 Q 365 262 385 272" stroke="#1F232B" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <path d="M 465 270 Q 435 262 415 272" stroke="#1F232B" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyes - Calm, confident, focused -->
+  <ellipse cx="360" cy="290" rx="15" ry="9" fill="#FFFFFF"/>
+  <circle cx="361" cy="290" r="6.5" fill="#231914"/>
+  <circle cx="363" cy="288" r="2" fill="#FFFFFF"/>
+
+  <ellipse cx="440" cy="290" rx="15" ry="9" fill="#FFFFFF"/>
+  <circle cx="439" cy="290" r="6.5" fill="#231914"/>
+  <circle cx="441" cy="288" r="2" fill="#FFFFFF"/>
+
+  <!-- Nose -->
+  <path d="M 400 280 L 396 325 Q 400 338 408 335" stroke="#9A6540" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="390" cy="336" rx="4" ry="2.5" fill="#7D4E2F" opacity="0.6"/>
+  <ellipse cx="410" cy="336" rx="4" ry="2.5" fill="#7D4E2F" opacity="0.6"/>
+
+  <!-- Friendly subtle smile -->
+  <path d="M 372 365 Q 400 382 428 365" stroke="#7D472D" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 378 366 Q 400 376 422 366" fill="#A85742" opacity="0.5"/>
+
+  <!-- Editorial Corner Marks & Typography Overlay in frame -->
+  <text x="40" y="80" fill="#5EE7F5" font-family="'Space Grotesk', sans-serif" font-size="14" letter-spacing="3" font-weight="600">ID // ADITYA DESFAJ ARIYA DHAMMA</text>
+  <text x="40" y="105" fill="#8B949E" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1">AUTHENTIC PORTRAIT · INDONESIA</text>
+
+  <!-- Technical crosshairs -->
+  <path d="M 40 40 L 60 40 M 40 40 L 40 60" stroke="#5EE7F5" stroke-width="1.5" fill="none"/>
+  <path d="M 760 40 L 740 40 M 760 40 L 760 60" stroke="#5EE7F5" stroke-width="1.5" fill="none"/>
+  <path d="M 40 960 L 60 960 M 40 960 L 40 940" stroke="#5EE7F5" stroke-width="1.5" fill="none"/>
+  <path d="M 760 960 L 740 960 M 760 960 L 760 940" stroke="#5EE7F5" stroke-width="1.5" fill="none"/>
+
+  <text x="760" y="940" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', monospace" font-size="11">LAT 6.2088° S · LON 106.8456° E</text>
+  <text x="760" y="960" text-anchor="end" fill="#5EE7F5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600" letter-spacing="1">STUDIO ARCHIVE · 2026</text>
+</svg>
